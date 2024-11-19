@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+
+    <!-- this is Internal CSS  -->
+    <style>
+        #intro {
+            font-weight: lighter;
+        }
+        .p-text {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+
+    <!-- this is external CSS  -->
+    <link rel="stylesheet" type="text/css" href="./styles/sample.css"/>
+</head>
+
+<!-- this in inline CSS -->
+ <body style="background-color: rgb(190, 195, 161);"> 
+
+    <script type="text/javascript">
+        // alert("Who asked?");
+        // alert("Whatever."); 
+
+        function theBigPicture(){
+            const greenPic = document.getElementById('green')
+            greenPic.width = 600
+        }
+
+        function theSmallPicture(){
+            const greenPic = document.getElementById('green')
+            greenPic.width = 100
+        }
+
+        function ChangePicture(){
+            const greenPic = document.getElementById('green')
+            greenPic.width = width
+        }
+
+    </script>
+
+
+    <h1 class="p-text" style="text-align: center;"> Green Pic</h1>
+    <p class="p-text" id="intro"> This is a green picture.</p>
+    <p class="p-text" >This is a not white picture.</p>
+   
+
+
+
+    <botton onclick="theBigPicture()"> The Big Picture</botton>
+    <botton onclick="theSmallPicture()"> The Small Picture</botton>
+    <img src="./Green.jpeg" width="200px" id="green"> 
+
+    <br>
+    <a href="./page2.htm">Page 2 thing</a>
+    <br>
+    <a 
+        href="https://www.google.com" 
+        target="_blank">
+        Google  
+    </a>
+
+</body>
+</html>
